@@ -13,6 +13,4 @@ class IsUserOwnerOrGetAndPostOnly(permissions.BasePermission):
         if not request.user.is_anonymous:
             return request.user == obj
         return False
-
-
-
+        

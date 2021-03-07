@@ -30,7 +30,6 @@ if settings.DEBUG:
     auth_api_urls.append(path(r'verify/',include('rest_framework.urls')))
 
 
-    
 api_url_patterns =[
     path(r'auth/',include(auth_api_urls)),
     path(r'accounts/',include(users_api_router.routers.urls))

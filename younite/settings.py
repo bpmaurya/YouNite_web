@@ -113,9 +113,8 @@ REST_FRAMEWORK = {
 }
 
 AUTHENTICATION_BACKEND={
-    'django.contrib.auth.backend.ModelBackend',
     'rest_framework_social_oauth2.backend.DjangoOAuth2',
-    ''
+    'django.contrib.auth.backend.ModelBackend',
 }
 
 
@@ -138,5 +137,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-MEDIA_ROOT = os.path.join(BASE_DIR,'media')
-MEDIA_URL = '/media/'
+# MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+# MEDIA_URL = '/media/'
